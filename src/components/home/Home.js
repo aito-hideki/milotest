@@ -1,6 +1,6 @@
 import React from 'react'
 
-import Characters from '../characters'
+import { Characters } from '../../containers'
 
 import './Home.scss'
 

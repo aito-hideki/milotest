@@ -4,11 +4,12 @@ import './CharacterCard.scss'
 
 export default class CharacterCard extends React.Component {
   render () {
-    const { character } = this.props
+    const { character, history } = this.props
 
     return (
       <article
         className="character-card"
+        onClick={() => history.push(`/character/${character.id}`)}
       >
         <section className="character-card__image"
           style={{

@@ -16,7 +16,7 @@ export const paths = [
     path: `/${item.name.toLowerCase()}`,
     ...item,
     component: Loadable({
-      loader: () => import(`../components/${(item.component || item.name).toLowerCase()}`),
+      loader: () => import(`../containers/${(item.component || item.name).toLowerCase()}`),
       loading: () => <div>Loading...</div>
     })
   }

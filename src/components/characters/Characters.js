@@ -1,6 +1,6 @@
 import React from 'react'
 
-import CharacterCard from '../character-card'
+import { CharacterCard } from '../../containers'
 
 import './Characters.scss'
 

@@ -1,7 +1,7 @@
 import React from 'react'
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom'
 
-import Header from './components/header'
+import { Header } from './containers'
 import { paths } from './constants/paths'
 
 import './_global.scss'

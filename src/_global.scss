@@ -1,0 +1,28 @@
+@import 'variable';
+
+body {
+    margin: 0;
+    color: $color-primary;
+    background-color: $color-black-lighten1;
+
+    min-height: 100vh;
+}
+
+.text- {
+    &white {
+        color: white;
+
+        &.darken-1 {
+            color: $color-white-darken1;
+        }
+        &.darken-2 {
+            color: $color-white-darken2;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .container {
+        max-width: 1200px;
+    }
+}

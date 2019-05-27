@@ -1,0 +1,24 @@
+@import '../../variable';
+
+.header {
+    height: 200px;
+    box-shadow: 0 0 15px black;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+    background-color: $color-background-header;
+    max-height: 80vw;
+    
+    &:after {
+        content: '';
+        top: 20px;
+        left: 20px;
+        right: 20px;
+        bottom: 20px;
+        position: absolute;
+        background-size: contain !important;
+        background-repeat: no-repeat !important;
+        background-position: center !important;
+        background-image: url("/images/rick-and-morty.jpg");
+    }
+}

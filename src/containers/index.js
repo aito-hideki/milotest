@@ -5,9 +5,9 @@ import Header from './header'
 import Home from './home'
 
 export {
-    CharacterCard,
-    CharacterDetail,
-    Characters,
-    Header,
-    Home
+  CharacterCard,
+  CharacterDetail,
+  Characters,
+  Header,
+  Home
 }

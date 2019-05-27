@@ -1,4 +1,5 @@
 import React from 'react'
+import { Link } from 'react-router-dom';
 
 import './CharacterDetail.scss'
 
@@ -14,7 +15,12 @@ export default class CharacterDetail extends React.Component {
     const isExist = Object.keys(list).includes(id);
 
     return (
-      isExist && <div>name: { list[id].name }</div>
+      <React.Fragment>
+      <Link to='/'
+        className="nav-link">Back to Home Page
+      </Link>
+      {isExist && <div>name: { list[id].name }</div>}
+      </React.Fragment>
     )
   }
 }

@@ -5,10 +5,11 @@ import './CharacterCard.scss'
 export default class CharacterCard extends React.Component {
   render () {
     const { character } = this.props
-    console.log(character)
 
     return (
-      <article className="character-card">
+      <article
+        className="character-card"
+      >
         <section className="character-card__image"
           style={{
             backgroundImage: `url('${character.image}')`
@@ -21,23 +22,23 @@ export default class CharacterCard extends React.Component {
         <section className="character-card__info-box">
           <div className="character-card__info">
             <span>status</span>
-            <div class="text-nowrap">{ character.status }</div>
+            <div className="text-nowrap">{ character.status }</div>
           </div>
           <div className="character-card__info">
             <span>species</span>
-            <div class="text-nowrap">{ character.species }</div>
+            <div className="text-nowrap">{ character.species }</div>
           </div>
           <div className="character-card__info">
             <span>gender</span>
-            <div class="text-nowrap">{ character.gender }</div>
+            <div className="text-nowrap">{ character.gender }</div>
           </div>
           <div className="character-card__info">
             <span>origin</span>
-            <div class="text-nowrap">{ character.origin.name }</div>
+            <div className="text-nowrap">{ character.origin.name }</div>
           </div>
           <div className="character-card__info">
             <span>last location</span>
-            <div class="text-nowrap">{ character.location.name }</div>
+            <div className="text-nowrap">{ character.location.name }</div>
           </div>
         </section>
       </article>

@@ -1,4 +1,5 @@
 import { connect } from 'react-redux'
+import { withRouter } from 'react-router-dom'
 
 import CharacterCard from './CharacterCard'
 import { } from '../../actions'
@@ -12,4 +13,4 @@ const mapDispatchToProps = dispatch => ({
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(CharacterCard)
+)(withRouter(CharacterCard))

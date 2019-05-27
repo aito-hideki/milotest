@@ -1,7 +1,7 @@
 const initState = {
   loading: false,
   currentPage: 'https://rickandmortyapi.com/api/character',
-  list: []
+  list: {}
 }
 
 export default (state = initState, action) => {
@@ -9,7 +9,7 @@ export default (state = initState, action) => {
     case 'LOAD_CHARACTERS_SUCCESS':
       return {
         ...state,
-        list: [ ...state.list, ...action.list ],
+        list: { ...state.list, ...action.list },
         currentPage: action.nextPage
       }
     case 'LOAD_CHARACTERS_FAILED':

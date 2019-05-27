@@ -8,14 +8,15 @@ export const paths = [
   },
   {
     path: '/character/:id',
-    name: 'Character'
+    component: 'character-detail',
+    name: 'Character Detail'
   }
 ].map(item => {
   return {
     path: `/${item.name.toLowerCase()}`,
     ...item,
     component: Loadable({
-      loader: () => import(`../components/${item.name.toLowerCase()}`),
+      loader: () => import(`../components/${(item.component || item.name).toLowerCase()}`),
       loading: () => <div>Loading...</div>
     })
   }

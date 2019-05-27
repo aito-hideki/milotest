@@ -1,6 +1,7 @@
 import React from 'react'
 import { Switch, Route, withRouter, Redirect } from 'react-router-dom'
 
+import Header from './components/header'
 import { paths } from './constants/paths'
 
 import './_global.scss'
@@ -23,6 +24,7 @@ class App extends React.Component {
   render () {
     return (
       <React.Fragment>
+        <Header />
         <CoreViewerBase />
       </React.Fragment>
     )

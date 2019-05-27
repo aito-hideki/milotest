@@ -16,9 +16,9 @@ export default class Characters extends React.Component {
     return (
       <div className="characters d-flex justify-content-between flex-wrap container">
         {
-          list.map((character, idx) => (
+          Object.keys(list).map((id, idx) => (
             <CharacterCard
-              character={character}
+              character={list[id]}
               key={idx} />
           ))
         }

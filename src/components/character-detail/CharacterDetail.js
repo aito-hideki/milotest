@@ -23,7 +23,7 @@ export default class CharacterDetail extends React.Component {
                 key={idx}
               >
                 <img
-                  className="m-3"
+                  className="m-3 mt-5"
                   src={selected.image}
                   alt={selected.name}
                   height="300px"

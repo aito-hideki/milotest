@@ -16,14 +16,15 @@ export default class CharacterDetail extends React.Component {
         <Link to='/'
           className="nav-link">Back to Home Page
         </Link>
-        <div>
+        <div className="d-flex flex-wrap">
           {
             list.map((selected, idx) => (
-              <div
-                className="profile-card"
-                key={idx}>
-                {selected.name}
-              </div>
+              <img
+                className="m-3"
+                src={selected.image}
+                key={idx}
+                height="300px"
+              />
             ))
           }
         </div>

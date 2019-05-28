@@ -2,13 +2,14 @@ import { connect } from 'react-redux'
 import { withRouter } from 'react-router-dom'
 
 import CharacterDetail from '../components/character-detail'
-import { } from '../actions'
+import { loadDetails } from '../actions'
 
 const mapStateToProps = state => ({
-  ...state.characters
+  ...state.details
 })
 
 const mapDispatchToProps = dispatch => ({
+  loadDetails: (selected) => { dispatch(loadDetails(selected)) }
 })
 
 export default connect(

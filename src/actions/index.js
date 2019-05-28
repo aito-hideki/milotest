@@ -3,11 +3,12 @@ export const loadCharacters = (currentPage) => ({
   currentPage
 })
 
-export const loadCharacterFlag = (flag) => ({
-  type: flag ? 'LOAD_CHARACTERS_ON' : 'LOAD_CHARACTERS_OFF'
+export const loadDetails = (selected) => ({
+  type: 'LOAD_DETAILS',
+  selected
 })
 
-export const characterSelected = (id) => ({
-  type: 'SELECT_CHARACTER',
+export const toggleSelected = (id) => ({
+  type: 'TOGGLE_SELECTED',
   id
 })

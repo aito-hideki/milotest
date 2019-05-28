@@ -4,12 +4,14 @@ import Loadable from 'react-loadable'
 export const paths = [
   {
     path: '/',
-    name: 'Home'
+    name: 'Home',
+    exact: true
   },
   {
     path: '/character/:id',
     component: 'character-detail',
-    name: 'Character Detail'
+    name: 'Character Detail',
+    exact: true
   }
 ].map(item => {
   return {

@@ -2,13 +2,23 @@
 
 .header {
     height: 200px;
-    box-shadow: 0 0 15px black;
     position: sticky;
     top: 0;
     z-index: 1;
     background-color: $color-background-header;
     max-height: 80vw;
-    
+
+    &:before {
+        position: absolute;
+        content: ' ';
+        user-select: none;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        height: 30px;
+        transform: translateY(100%);
+        background-image: linear-gradient($color-black-lighten1, $color-black-lighten1, transparent);
+    }
     &:after {
         content: '';
         top: 20px;
@@ -20,5 +30,17 @@
         background-repeat: no-repeat !important;
         background-position: center !important;
         background-image: url("/images/rick-and-morty.jpg");
+    }
+
+    .button-showall {
+        position: absolute;
+        right: 0;
+        bottom: 0;
+        transform: translate(-25%, 125%);
+        transition: transform .5s;
+        
+        &.disabled {
+            transform: translate(125%, 125%);
+        }
     }
 }

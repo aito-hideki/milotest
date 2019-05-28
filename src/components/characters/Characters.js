@@ -5,21 +5,45 @@ import { CharacterCard } from '../../containers'
 import './Characters.scss'
 
 export default class Characters extends React.Component {
+  constructor (props) {
+    super(props)
+    const { loadCharacters } = this.props
+
+    // Binds our scroll event handler
+    window.onscroll = () => {
+      // Bails early if:
+      // * there's an error
+      // * it's already loading
+      // * there's nothing left to load
+      if (this.props.loading) return
+
+      // Checks that the page has scrolled to the bottom
+      if (
+        window.innerHeight + document.documentElement.scrollTop ===
+        document.documentElement.offsetHeight
+      ) {
+        loadCharacters(this.props.currentPage)
+      }
+    }
+  }
   componentDidMount () {
     const { loadCharacters, currentPage } = this.props
 
     loadCharacters(currentPage)
   }
   render () {
-    const { list, loadCharacters, currentPage, loading } = this.props
+    const { list, selected, loadCharacters, currentPage, loading, toggleSelected } = this.props
 
     return (
       <div className="characters d-flex justify-content-between flex-wrap container">
         {
-          Object.keys(list).map((id, idx) => (
+          list.map((character, idx) => (
             <CharacterCard
-              character={list[id]}
-              key={idx} />
+              character={character}
+              toggleSelected={toggleSelected}
+              selected={selected.includes(parseInt(character.id))}
+              key={idx}
+            />
           ))
         }
         <div className="loader w-100 d-flex justify-content-center text-primary">

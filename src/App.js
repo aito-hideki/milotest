@@ -10,10 +10,12 @@ const CoreViewerBase = () => (
   <Switch>
     {
       paths.map((path, idx) => (
-        <Route exact
+        <Route
           path={path.path}
           component={path.component}
-          key={idx} />
+          key={idx}
+          exact={path.exact}
+        />
       ))
     }
     <Redirect to="/" />

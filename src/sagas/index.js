@@ -1,6 +1,8 @@
 import { loadCharacters } from './characters'
-import { takeEvery } from 'redux-saga/effects'
+import { loadDetails } from './details'
+import { takeLatest } from 'redux-saga/effects'
 
 export function * watchdog () {
-  yield takeEvery('LOAD_CHARACTERS', loadCharacters)
+  yield takeLatest('LOAD_CHARACTERS', loadCharacters)
+  yield takeLatest('LOAD_DETAILS', loadDetails)
 }

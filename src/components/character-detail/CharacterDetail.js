@@ -6,25 +6,32 @@ import './CharacterDetail.scss'
 export default class CharacterDetail extends React.Component {
   componentDidMount () {
     const { match: { params: { id } }, loadDetails } = this.props
-    loadDetails(id.split(', '))
+    loadDetails(id.split(','))
   }
   render () {
     const { list, loading } = this.props
     console.log(loading, list)
     return (
-      <div className="pt-3">
+      <div className="pt-5">
         <Link to='/'
           className="nav-link">Back to Home Page
         </Link>
         <div className="d-flex flex-wrap">
           {
             list.map((selected, idx) => (
-              <img
-                className="m-3"
-                src={selected.image}
+              <div
                 key={idx}
-                height="300px"
-              />
+              >
+                <img
+                  className="m-3"
+                  src={selected.image}
+                  alt={selected.name}
+                  height="300px"
+                />
+                <p className="text-center">
+                  {selected.name}
+                </p>
+              </div>
             ))
           }
         </div>

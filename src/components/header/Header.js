@@ -7,7 +7,7 @@ export default (props) => (
     <button
       type="button"
       className={`button-showall btn btn-primary ${props.selected.length ? '' : 'disabled'}`}
-      onClick={() => props.history.push(`/character/${props.selected.join(', ')}`)}
+      onClick={() => props.history.push(`/character/${props.selected.join(',')}`)}
     >
       <i className="fas fa-eye"></i>
     </button>

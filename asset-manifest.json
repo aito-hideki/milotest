@@ -1,0 +1,15 @@
+{
+  "files": {
+    "main.css": "/milotest/static/css/main.cce35fc8.chunk.css",
+    "main.js": "/milotest/static/js/main.76279509.chunk.js",
+    "main.js.map": "/milotest/static/js/main.76279509.chunk.js.map",
+    "runtime~main.js": "/milotest/static/js/runtime~main.20ebc9b9.js",
+    "runtime~main.js.map": "/milotest/static/js/runtime~main.20ebc9b9.js.map",
+    "static/js/2.02424d0e.chunk.js": "/milotest/static/js/2.02424d0e.chunk.js",
+    "static/js/2.02424d0e.chunk.js.map": "/milotest/static/js/2.02424d0e.chunk.js.map",
+    "index.html": "/milotest/index.html",
+    "precache-manifest.dc1fb02a612d55b2122056625a609942.js": "/milotest/precache-manifest.dc1fb02a612d55b2122056625a609942.js",
+    "service-worker.js": "/milotest/service-worker.js",
+    "static/css/main.cce35fc8.chunk.css.map": "/milotest/static/css/main.cce35fc8.chunk.css.map"
+  }
+}

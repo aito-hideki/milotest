@@ -1,14 +1,14 @@
 {
   "files": {
     "main.css": "/milotest/static/css/main.94d3f50c.chunk.css",
-    "main.js": "/milotest/static/js/main.a6134905.chunk.js",
-    "main.js.map": "/milotest/static/js/main.a6134905.chunk.js.map",
+    "main.js": "/milotest/static/js/main.33fa1767.chunk.js",
+    "main.js.map": "/milotest/static/js/main.33fa1767.chunk.js.map",
     "runtime~main.js": "/milotest/static/js/runtime~main.20ebc9b9.js",
     "runtime~main.js.map": "/milotest/static/js/runtime~main.20ebc9b9.js.map",
     "static/js/2.02424d0e.chunk.js": "/milotest/static/js/2.02424d0e.chunk.js",
     "static/js/2.02424d0e.chunk.js.map": "/milotest/static/js/2.02424d0e.chunk.js.map",
     "index.html": "/milotest/index.html",
-    "precache-manifest.ba0116170ec92742a364daa9d108e4a6.js": "/milotest/precache-manifest.ba0116170ec92742a364daa9d108e4a6.js",
+    "precache-manifest.ef5fb799e7628f7e0f85a10b115a372b.js": "/milotest/precache-manifest.ef5fb799e7628f7e0f85a10b115a372b.js",
     "service-worker.js": "/milotest/service-worker.js",
     "static/css/main.94d3f50c.chunk.css.map": "/milotest/static/css/main.94d3f50c.chunk.css.map"
   }

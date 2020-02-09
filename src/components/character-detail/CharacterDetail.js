@@ -10,7 +10,7 @@ export default class CharacterDetail extends React.Component {
   }
   render () {
     const { list, loading } = this.props
-    console.log(loading, list)
+
     return (
       <div className="pt-5">
         <Link to='/'

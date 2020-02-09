@@ -3,7 +3,6 @@ import React from 'react'
 import './Header.scss'
 
 const { NODE_ENV } = process.env
-console.log(NODE_ENV)
 
 export default (props) => (
   <header className={`header${NODE_ENV === 'production' ? ' milotest' : ''}`}>

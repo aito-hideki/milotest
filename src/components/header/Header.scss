@@ -32,6 +32,10 @@
         background-image: url("/images/rick-and-morty.jpg");
     }
 
+    &.milotest:after {
+        background-image: url("/milotest/images/rick-and-morty.jpg");
+    }
+
     .button-showall {
         position: absolute;
         right: 0;

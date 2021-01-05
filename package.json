@@ -4,7 +4,7 @@
   "private": true,
   "homepage": "https://aito-hideki.github.io/milotest",
   "dependencies": {
-    "axios": "^0.18.0",
+    "axios": "^0.21.1",
     "eslint": "^5.16.0",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-node": "^9.1.0",
